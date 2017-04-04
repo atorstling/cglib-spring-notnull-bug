@@ -1,5 +1,4 @@
 package com.broken;
 
-public interface User<I> {
-    I getId();
+public interface User {
 }

@@ -2,7 +2,7 @@ package com.broken;
 
 import org.jetbrains.annotations.NotNull;
 
-public interface UserRepo<T extends User<I>, I> {
+public interface UserRepo<T extends User> {
     //Change return type between boxed Boolean and primitive boolean for different exceptions
-    Boolean update(@NotNull T T);
+    boolean update(@NotNull T T);
 }

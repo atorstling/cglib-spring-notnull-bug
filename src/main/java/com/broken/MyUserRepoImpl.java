@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import javax.sql.DataSource;
 
 @Repository
-public class MyUserRepoImpl implements MyUserRepo {
+public class MyUserRepoImpl implements UserRepo<MyUser> {
 
     @Autowired
     public MyUserRepoImpl() {

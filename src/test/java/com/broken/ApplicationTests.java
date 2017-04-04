@@ -13,7 +13,7 @@ import static org.junit.Assert.assertTrue;
 public class ApplicationTests {
 	
 	@Autowired
-	MyUserRepo repo;
+	UserRepo<MyUser> repo;
 
 	@Test
 	public void contextLoads() {

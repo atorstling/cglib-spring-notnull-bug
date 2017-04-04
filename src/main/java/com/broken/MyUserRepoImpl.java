@@ -9,20 +9,12 @@ import javax.sql.DataSource;
 @Repository
 public class MyUserRepoImpl implements MyUserRepo {
 
-    private final char assignedField;
-
     @Autowired
-    public MyUserRepoImpl(@NotNull DataSource dataSource, String otherParam) {
-        assignedField = otherParam.charAt(1);
+    public MyUserRepoImpl() {
     }
 
     @Override
     public boolean update(@NotNull MyUser myUser) {
         return true;
-    }
-
-    @Override
-    public char getIt() {
-        return assignedField;
     }
 }

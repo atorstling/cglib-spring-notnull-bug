@@ -15,11 +15,10 @@ import static org.junit.Assert.assertEquals;
 public class ClassloadingApplicationTests {
 	
 	@Autowired
-	Serv serv;
+	MyUserRepo repo;
 
 	@Test
 	public void contextLoads() {
-		assertEquals('S', serv.getIt());
 	}
 
 }

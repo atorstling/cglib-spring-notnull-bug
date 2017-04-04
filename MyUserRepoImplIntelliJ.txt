@@ -1,0 +1,66 @@
+Compiled from "MyUserRepoImpl.java"
+public class com.broken.MyUserRepoImpl implements com.broken.UserRepo<com.broken.MyUser> {
+  public com.broken.MyUserRepoImpl();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+    LineNumberTable:
+      line 13: 0
+      line 14: 4
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lcom/broken/MyUserRepoImpl;
+
+  public boolean update(com.broken.MyUser);
+    Code:
+       0: aload_1
+       1: ifnonnull     8
+       4: iconst_0
+       5: invokestatic  #38                 // Method $$$reportNull$$$0:(I)V
+       8: iconst_1
+       9: ireturn
+    LineNumberTable:
+      line 18: 8
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  this   Lcom/broken/MyUserRepoImpl;
+          0      10     1 myUser   Lcom/broken/MyUser;
+
+  public boolean update(com.broken.User);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #2                  // class com/broken/MyUser
+       5: invokevirtual #3                  // Method update:(Lcom/broken/MyUser;)Z
+       8: ireturn
+    LineNumberTable:
+      line 9: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       9     0  this   Lcom/broken/MyUserRepoImpl;
+
+  private static void $$$reportNull$$$0(int);
+    Code:
+       0: ldc           #40                 // String Argument for @NotNull parameter \'%s\' of %s.%s must not be null
+       2: iconst_3
+       3: anewarray     #5                  // class java/lang/Object
+       6: dup
+       7: iconst_0
+       8: ldc           #41                 // String myUser
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: ldc           #42                 // String com/broken/MyUserRepoImpl
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: ldc           #43                 // String update
+      20: aastore
+      21: invokestatic  #49                 // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      24: new           #51                 // class java/lang/IllegalArgumentException
+      27: dup_x1
+      28: swap
+      29: invokespecial #54                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      32: athrow
+}

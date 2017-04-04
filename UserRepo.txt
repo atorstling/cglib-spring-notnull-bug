@@ -1,0 +1,4 @@
+Compiled from "UserRepo.java"
+public interface com.broken.UserRepo<T extends com.broken.User<I>, I> {
+  public abstract java.lang.Boolean update(T);
+}

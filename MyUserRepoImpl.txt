@@ -1,0 +1,53 @@
+Compiled from "MyUserRepoImpl.java"
+public class com.broken.MyUserRepoImpl implements com.broken.MyUserRepo {
+  public com.broken.MyUserRepoImpl();
+    Code:
+       0: aload_0
+       1: invokespecial #13                 // Method java/lang/Object."<init>":()V
+       4: return
+    LineNumberTable:
+      line 13: 0
+      line 14: 4
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lcom/broken/MyUserRepoImpl;
+
+  public java.lang.Boolean update(com.broken.MyUser);
+    Code:
+       0: aload_1
+       1: ifnonnull     14
+       4: new           #20                 // class java/lang/IllegalArgumentException
+       7: dup
+       8: ldc           #22                 // String Argument 0 for @NotNull parameter of com/broken/MyUserRepoImpl.update must not be null
+      10: invokespecial #25                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      13: athrow
+      14: iconst_1
+      15: invokestatic  #31                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      18: areturn
+    LineNumberTable:
+      line 18: 14
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      19     0  this   Lcom/broken/MyUserRepoImpl;
+          0      19     1 myUser   Lcom/broken/MyUser;
+
+  public java.lang.Boolean update(com.broken.User);
+    Code:
+       0: aload_1
+       1: ifnonnull     14
+       4: new           #20                 // class java/lang/IllegalArgumentException
+       7: dup
+       8: ldc           #22                 // String Argument 0 for @NotNull parameter of com/broken/MyUserRepoImpl.update must not be null
+      10: invokespecial #25                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      13: athrow
+      14: aload_0
+      15: aload_1
+      16: checkcast     #36                 // class com/broken/MyUser
+      19: invokevirtual #38                 // Method update:(Lcom/broken/MyUser;)Ljava/lang/Boolean;
+      22: areturn
+    LineNumberTable:
+      line 9: 14
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      23     0  this   Lcom/broken/MyUserRepoImpl;
+}

@@ -14,7 +14,7 @@ public class MyUserRepoImpl implements MyUserRepo {
     }
 
     @Override
-    public boolean update(@NotNull MyUser myUser) {
+    public Boolean update(@NotNull MyUser myUser) {
         return true;
     }
 }

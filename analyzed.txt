@@ -1,0 +1,1590 @@
+Compiled from "<generated>"
+public class com.broken.MyUserRepoImpl$$EnhancerBySpringCGLIB$$7321e929 extends com.broken.MyUserRepoImpl implements org.springframework.aop.SpringProxy,org.springframework.aop.framework.Advised,org.springframework.cglib.proxy.Factory {
+  private boolean CGLIB$BOUND;
+
+  public static java.lang.Object CGLIB$FACTORY_DATA;
+
+  private static final java.lang.ThreadLocal CGLIB$THREAD_CALLBACKS;
+
+  private static final org.springframework.cglib.proxy.Callback[] CGLIB$STATIC_CALLBACKS;
+
+  private org.springframework.cglib.proxy.MethodInterceptor CGLIB$CALLBACK_0;
+
+  private org.springframework.cglib.proxy.MethodInterceptor CGLIB$CALLBACK_1;
+
+  private org.springframework.cglib.proxy.NoOp CGLIB$CALLBACK_2;
+
+  private org.springframework.cglib.proxy.Dispatcher CGLIB$CALLBACK_3;
+
+  private org.springframework.cglib.proxy.Dispatcher CGLIB$CALLBACK_4;
+
+  private org.springframework.cglib.proxy.MethodInterceptor CGLIB$CALLBACK_5;
+
+  private org.springframework.cglib.proxy.MethodInterceptor CGLIB$CALLBACK_6;
+
+  private static java.lang.Object CGLIB$CALLBACK_FILTER;
+
+  private static final java.lang.reflect.Method CGLIB$update$0$Method;
+
+  private static final org.springframework.cglib.proxy.MethodProxy CGLIB$update$0$Proxy;
+
+  private static final java.lang.Object[] CGLIB$emptyArgs;
+
+  private static final java.lang.reflect.Method CGLIB$update$1$Method;
+
+  private static final org.springframework.cglib.proxy.MethodProxy CGLIB$update$1$Proxy;
+
+  private static final java.lang.reflect.Method CGLIB$equals$2$Method;
+
+  private static final org.springframework.cglib.proxy.MethodProxy CGLIB$equals$2$Proxy;
+
+  private static final java.lang.reflect.Method CGLIB$toString$3$Method;
+
+  private static final org.springframework.cglib.proxy.MethodProxy CGLIB$toString$3$Proxy;
+
+  private static final java.lang.reflect.Method CGLIB$hashCode$4$Method;
+
+  private static final org.springframework.cglib.proxy.MethodProxy CGLIB$hashCode$4$Proxy;
+
+  private static final java.lang.reflect.Method CGLIB$clone$5$Method;
+
+  private static final org.springframework.cglib.proxy.MethodProxy CGLIB$clone$5$Proxy;
+
+  static void CGLIB$STATICHOOK77();
+    Code:
+       0: new           #34                 // class java/lang/ThreadLocal
+       3: dup
+       4: invokespecial #37                 // Method java/lang/ThreadLocal."<init>":()V
+       7: putstatic     #39                 // Field CGLIB$THREAD_CALLBACKS:Ljava/lang/ThreadLocal;
+      10: iconst_0
+      11: anewarray     #60                 // class java/lang/Object
+      14: putstatic     #124                // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      17: ldc           #180                // String com.broken.MyUserRepoImpl$$EnhancerBySpringCGLIB$$7321e929
+      19: invokestatic  #186                // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      22: astore_0
+      23: bipush        8
+      25: anewarray     #128                // class java/lang/String
+      28: dup
+      29: iconst_0
+      30: ldc           #187                // String equals
+      32: aastore
+      33: dup
+      34: iconst_1
+      35: ldc           #188                // String (Ljava/lang/Object;)Z
+      37: aastore
+      38: dup
+      39: iconst_2
+      40: ldc           #189                // String toString
+      42: aastore
+      43: dup
+      44: iconst_3
+      45: ldc           #190                // String ()Ljava/lang/String;
+      47: aastore
+      48: dup
+      49: iconst_4
+      50: ldc           #191                // String hashCode
+      52: aastore
+      53: dup
+      54: iconst_5
+      55: ldc           #192                // String ()I
+      57: aastore
+      58: dup
+      59: bipush        6
+      61: ldc           #193                // String clone
+      63: aastore
+      64: dup
+      65: bipush        7
+      67: ldc           #194                // String ()Ljava/lang/Object;
+      69: aastore
+      70: ldc           #196                // String java.lang.Object
+      72: invokestatic  #186                // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      75: dup
+      76: astore_1
+      77: invokevirtual #200                // Method java/lang/Class.getDeclaredMethods:()[Ljava/lang/reflect/Method;
+      80: invokestatic  #206                // Method org/springframework/cglib/core/ReflectUtils.findMethods:([Ljava/lang/String;[Ljava/lang/reflect/Method;)[Ljava/lang/reflect/Method;
+      83: dup
+      84: iconst_0
+      85: aaload
+      86: putstatic     #107                // Field CGLIB$equals$2$Method:Ljava/lang/reflect/Method;
+      89: aload_1
+      90: aload_0
+      91: ldc           #188                // String (Ljava/lang/Object;)Z
+      93: ldc           #187                // String equals
+      95: ldc           #207                // String CGLIB$equals$2
+      97: invokestatic  #213                // Method org/springframework/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/cglib/proxy/MethodProxy;
+     100: putstatic     #109                // Field CGLIB$equals$2$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     103: dup
+     104: iconst_1
+     105: aaload
+     106: putstatic     #122                // Field CGLIB$toString$3$Method:Ljava/lang/reflect/Method;
+     109: aload_1
+     110: aload_0
+     111: ldc           #190                // String ()Ljava/lang/String;
+     113: ldc           #189                // String toString
+     115: ldc           #214                // String CGLIB$toString$3
+     117: invokestatic  #213                // Method org/springframework/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/cglib/proxy/MethodProxy;
+     120: putstatic     #126                // Field CGLIB$toString$3$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     123: dup
+     124: iconst_2
+     125: aaload
+     126: putstatic     #139                // Field CGLIB$hashCode$4$Method:Ljava/lang/reflect/Method;
+     129: aload_1
+     130: aload_0
+     131: ldc           #192                // String ()I
+     133: ldc           #191                // String hashCode
+     135: ldc           #215                // String CGLIB$hashCode$4
+     137: invokestatic  #213                // Method org/springframework/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/cglib/proxy/MethodProxy;
+     140: putstatic     #141                // Field CGLIB$hashCode$4$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     143: dup
+     144: iconst_3
+     145: aaload
+     146: putstatic     #157                // Field CGLIB$clone$5$Method:Ljava/lang/reflect/Method;
+     149: aload_1
+     150: aload_0
+     151: ldc           #194                // String ()Ljava/lang/Object;
+     153: ldc           #193                // String clone
+     155: ldc           #216                // String CGLIB$clone$5
+     157: invokestatic  #213                // Method org/springframework/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/cglib/proxy/MethodProxy;
+     160: putstatic     #159                // Field CGLIB$clone$5$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     163: pop
+     164: iconst_4
+     165: anewarray     #128                // class java/lang/String
+     168: dup
+     169: iconst_0
+     170: ldc           #217                // String update
+     172: aastore
+     173: dup
+     174: iconst_1
+     175: ldc           #218                // String (Lcom/broken/MyUser;)Ljava/lang/Boolean;
+     177: aastore
+     178: dup
+     179: iconst_2
+     180: ldc           #217                // String update
+     182: aastore
+     183: dup
+     184: iconst_3
+     185: ldc           #219                // String (Lcom/broken/User;)Ljava/lang/Boolean;
+     187: aastore
+     188: ldc           #221                // String com.broken.MyUserRepoImpl
+     190: invokestatic  #186                // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+     193: dup
+     194: astore_1
+     195: invokevirtual #200                // Method java/lang/Class.getDeclaredMethods:()[Ljava/lang/reflect/Method;
+     198: invokestatic  #206                // Method org/springframework/cglib/core/ReflectUtils.findMethods:([Ljava/lang/String;[Ljava/lang/reflect/Method;)[Ljava/lang/reflect/Method;
+     201: dup
+     202: iconst_0
+     203: aaload
+     204: putstatic     #58                 // Field CGLIB$update$0$Method:Ljava/lang/reflect/Method;
+     207: aload_1
+     208: aload_0
+     209: ldc           #218                // String (Lcom/broken/MyUser;)Ljava/lang/Boolean;
+     211: ldc           #217                // String update
+     213: ldc           #222                // String CGLIB$update$0
+     215: invokestatic  #213                // Method org/springframework/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/cglib/proxy/MethodProxy;
+     218: putstatic     #62                 // Field CGLIB$update$0$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     221: dup
+     222: iconst_1
+     223: aaload
+     224: putstatic     #92                 // Field CGLIB$update$1$Method:Ljava/lang/reflect/Method;
+     227: aload_1
+     228: aload_0
+     229: ldc           #219                // String (Lcom/broken/User;)Ljava/lang/Boolean;
+     231: ldc           #217                // String update
+     233: ldc           #223                // String CGLIB$update$1
+     235: invokestatic  #213                // Method org/springframework/cglib/proxy/MethodProxy.create:(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/cglib/proxy/MethodProxy;
+     238: putstatic     #94                 // Field CGLIB$update$1$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     241: pop
+     242: return
+     243: athrow
+
+  final java.lang.Boolean CGLIB$update$0(com.broken.MyUser);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #50                 // Method com/broken/MyUserRepoImpl.update:(Lcom/broken/MyUser;)Ljava/lang/Boolean;
+       5: areturn
+
+  public final java.lang.Boolean update(com.broken.MyUser);
+    Code:
+       0: aload_0
+       1: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        45
+      21: aload_0
+      22: getstatic     #58                 // Field CGLIB$update$0$Method:Ljava/lang/reflect/Method;
+      25: iconst_1
+      26: anewarray     #60                 // class java/lang/Object
+      29: dup
+      30: iconst_0
+      31: aload_1
+      32: aastore
+      33: getstatic     #62                 // Field CGLIB$update$0$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+      36: invokeinterface #68,  5           // InterfaceMethod org/springframework/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lorg/springframework/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      41: checkcast     #70                 // class java/lang/Boolean
+      44: areturn
+      45: aload_0
+      46: aload_1
+      47: invokespecial #50                 // Method com/broken/MyUserRepoImpl.update:(Lcom/broken/MyUser;)Ljava/lang/Boolean;
+      50: areturn
+      51: athrow
+      52: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      55: dup_x1
+      56: swap
+      57: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      60: athrow
+    Exception table:
+       from    to  target type
+           0    51    51   Class java/lang/RuntimeException
+           0    51    51   Class java/lang/Error
+           0    51    52   Class java/lang/Throwable
+
+  final java.lang.Boolean CGLIB$update$1(com.broken.User);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #90                 // Method "<init>":(Ljava/lang/String;)V
+       5: checkcast     #70                 // class java/lang/Boolean
+       8: areturn
+
+  public final java.lang.Boolean update(com.broken.User);
+    Code:
+       0: aload_0
+       1: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        45
+      21: aload_0
+      22: getstatic     #92                 // Field CGLIB$update$1$Method:Ljava/lang/reflect/Method;
+      25: iconst_1
+      26: anewarray     #60                 // class java/lang/Object
+      29: dup
+      30: iconst_0
+      31: aload_1
+      32: aastore
+      33: getstatic     #94                 // Field CGLIB$update$1$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+      36: invokeinterface #68,  5           // InterfaceMethod org/springframework/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lorg/springframework/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      41: checkcast     #70                 // class java/lang/Boolean
+      44: areturn
+      45: aload_0
+      46: aload_1
+      47: invokevirtual #90                 // Method "<init>":(Ljava/lang/String;)V
+      50: checkcast     #70                 // class java/lang/Boolean
+      53: areturn
+      54: athrow
+      55: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      58: dup_x1
+      59: swap
+      60: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      63: athrow
+    Exception table:
+       from    to  target type
+           0    54    54   Class java/lang/RuntimeException
+           0    54    54   Class java/lang/Error
+           0    54    55   Class java/lang/Throwable
+
+  final boolean CGLIB$equals$2(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #103                // Method com/broken/MyUserRepoImpl.equals:(Ljava/lang/Object;)Z
+       5: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: getfield      #105                // Field CGLIB$CALLBACK_5:Lorg/springframework/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #105                // Field CGLIB$CALLBACK_5:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        57
+      21: aload_0
+      22: getstatic     #107                // Field CGLIB$equals$2$Method:Ljava/lang/reflect/Method;
+      25: iconst_1
+      26: anewarray     #60                 // class java/lang/Object
+      29: dup
+      30: iconst_0
+      31: aload_1
+      32: aastore
+      33: getstatic     #109                // Field CGLIB$equals$2$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+      36: invokeinterface #68,  5           // InterfaceMethod org/springframework/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lorg/springframework/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      41: dup
+      42: ifnonnull     50
+      45: pop
+      46: iconst_0
+      47: goto          56
+      50: checkcast     #70                 // class java/lang/Boolean
+      53: invokevirtual #113                // Method java/lang/Boolean.booleanValue:()Z
+      56: ireturn
+      57: aload_0
+      58: aload_1
+      59: invokespecial #103                // Method com/broken/MyUserRepoImpl.equals:(Ljava/lang/Object;)Z
+      62: ireturn
+      63: athrow
+      64: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      67: dup_x1
+      68: swap
+      69: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      72: athrow
+    Exception table:
+       from    to  target type
+           0    63    63   Class java/lang/RuntimeException
+           0    63    63   Class java/lang/Error
+           0    63    64   Class java/lang/Throwable
+
+  final java.lang.String CGLIB$toString$3();
+    Code:
+       0: aload_0
+       1: invokespecial #120                // Method com/broken/MyUserRepoImpl.toString:()Ljava/lang/String;
+       4: areturn
+
+  public final java.lang.String toString();
+    Code:
+       0: aload_0
+       1: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        40
+      21: aload_0
+      22: getstatic     #122                // Field CGLIB$toString$3$Method:Ljava/lang/reflect/Method;
+      25: getstatic     #124                // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      28: getstatic     #126                // Field CGLIB$toString$3$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+      31: invokeinterface #68,  5           // InterfaceMethod org/springframework/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lorg/springframework/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      36: checkcast     #128                // class java/lang/String
+      39: areturn
+      40: aload_0
+      41: invokespecial #120                // Method com/broken/MyUserRepoImpl.toString:()Ljava/lang/String;
+      44: areturn
+      45: athrow
+      46: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      49: dup_x1
+      50: swap
+      51: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      54: athrow
+    Exception table:
+       from    to  target type
+           0    45    45   Class java/lang/RuntimeException
+           0    45    45   Class java/lang/Error
+           0    45    46   Class java/lang/Throwable
+
+  final int CGLIB$hashCode$4();
+    Code:
+       0: aload_0
+       1: invokespecial #135                // Method com/broken/MyUserRepoImpl.hashCode:()I
+       4: ireturn
+
+  public final int hashCode();
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field CGLIB$CALLBACK_6:Lorg/springframework/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #137                // Field CGLIB$CALLBACK_6:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        52
+      21: aload_0
+      22: getstatic     #139                // Field CGLIB$hashCode$4$Method:Ljava/lang/reflect/Method;
+      25: getstatic     #124                // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      28: getstatic     #141                // Field CGLIB$hashCode$4$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+      31: invokeinterface #68,  5           // InterfaceMethod org/springframework/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lorg/springframework/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      36: dup
+      37: ifnonnull     45
+      40: pop
+      41: iconst_0
+      42: goto          51
+      45: checkcast     #143                // class java/lang/Number
+      48: invokevirtual #146                // Method java/lang/Number.intValue:()I
+      51: ireturn
+      52: aload_0
+      53: invokespecial #135                // Method com/broken/MyUserRepoImpl.hashCode:()I
+      56: ireturn
+      57: athrow
+      58: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      61: dup_x1
+      62: swap
+      63: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      66: athrow
+    Exception table:
+       from    to  target type
+           0    57    57   Class java/lang/RuntimeException
+           0    57    57   Class java/lang/Error
+           0    57    58   Class java/lang/Throwable
+
+  final java.lang.Object CGLIB$clone$5() throws java.lang.CloneNotSupportedException;
+    Code:
+       0: aload_0
+       1: invokespecial #155                // Method com/broken/MyUserRepoImpl.clone:()Ljava/lang/Object;
+       4: areturn
+
+  protected final java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+    Code:
+       0: aload_0
+       1: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      17: dup
+      18: ifnull        37
+      21: aload_0
+      22: getstatic     #157                // Field CGLIB$clone$5$Method:Ljava/lang/reflect/Method;
+      25: getstatic     #124                // Field CGLIB$emptyArgs:[Ljava/lang/Object;
+      28: getstatic     #159                // Field CGLIB$clone$5$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+      31: invokeinterface #68,  5           // InterfaceMethod org/springframework/cglib/proxy/MethodInterceptor.intercept:(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;Lorg/springframework/cglib/proxy/MethodProxy;)Ljava/lang/Object;
+      36: areturn
+      37: aload_0
+      38: invokespecial #155                // Method com/broken/MyUserRepoImpl.clone:()Ljava/lang/Object;
+      41: areturn
+      42: athrow
+      43: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      46: dup_x1
+      47: swap
+      48: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      51: athrow
+    Exception table:
+       from    to  target type
+           0    42    42   Class java/lang/RuntimeException
+           0    42    42   Class java/lang/Error
+           0    42    42   Class java/lang/CloneNotSupportedException
+           0    42    43   Class java/lang/Throwable
+
+  public static org.springframework.cglib.proxy.MethodProxy CGLIB$findMethodProxy(org.springframework.cglib.core.Signature);
+    Code:
+       0: aload_0
+       1: invokevirtual #162                // Method java/lang/Object.toString:()Ljava/lang/String;
+       4: dup
+       5: invokevirtual #163                // Method java/lang/Object.hashCode:()I
+       8: lookupswitch  { // 6
+            -508378822: 68
+            -305370897: 80
+            1368957307: 92
+            1826985398: 104
+            1913648695: 116
+            1984935277: 128
+               default: 140
+          }
+      68: ldc           #165                // String clone()Ljava/lang/Object;
+      70: invokevirtual #166                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      73: ifeq          141
+      76: getstatic     #159                // Field CGLIB$clone$5$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+      79: areturn
+      80: ldc           #168                // String update(Lcom/broken/MyUser;)Ljava/lang/Boolean;
+      82: invokevirtual #166                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      85: ifeq          141
+      88: getstatic     #62                 // Field CGLIB$update$0$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+      91: areturn
+      92: ldc           #170                // String update(Lcom/broken/User;)Ljava/lang/Boolean;
+      94: invokevirtual #166                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      97: ifeq          141
+     100: getstatic     #94                 // Field CGLIB$update$1$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     103: areturn
+     104: ldc           #172                // String equals(Ljava/lang/Object;)Z
+     106: invokevirtual #166                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+     109: ifeq          141
+     112: getstatic     #109                // Field CGLIB$equals$2$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     115: areturn
+     116: ldc           #174                // String toString()Ljava/lang/String;
+     118: invokevirtual #166                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+     121: ifeq          141
+     124: getstatic     #126                // Field CGLIB$toString$3$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     127: areturn
+     128: ldc           #176                // String hashCode()I
+     130: invokevirtual #166                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+     133: ifeq          141
+     136: getstatic     #141                // Field CGLIB$hashCode$4$Proxy:Lorg/springframework/cglib/proxy/MethodProxy;
+     139: areturn
+     140: pop
+     141: aconst_null
+     142: areturn
+
+  public final void addAdvisor(int, org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException;
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: iload_1
+      26: aload_2
+      27: invokeinterface #236,  3          // InterfaceMethod org/springframework/aop/framework/Advised.addAdvisor:(ILorg/springframework/aop/Advisor;)V
+      32: return
+      33: athrow
+      34: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      37: dup_x1
+      38: swap
+      39: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      42: athrow
+    Exception table:
+       from    to  target type
+           0    33    33   Class java/lang/RuntimeException
+           0    33    33   Class java/lang/Error
+           0    33    33   Class org/springframework/aop/framework/AopConfigException
+           0    33    34   Class java/lang/Throwable
+
+  public final void addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException;
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: aload_1
+      26: invokeinterface #241,  2          // InterfaceMethod org/springframework/aop/framework/Advised.addAdvisor:(Lorg/springframework/aop/Advisor;)V
+      31: return
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    32   Class org/springframework/aop/framework/AopConfigException
+           0    32    33   Class java/lang/Throwable
+
+  public final void setExposeProxy(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: iload_1
+      26: invokeinterface #245,  2          // InterfaceMethod org/springframework/aop/framework/Advised.setExposeProxy:(Z)V
+      31: return
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    33   Class java/lang/Throwable
+
+  public final boolean isExposeProxy();
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: invokeinterface #248,  1          // InterfaceMethod org/springframework/aop/framework/Advised.isExposeProxy:()Z
+      30: ireturn
+      31: athrow
+      32: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      35: dup_x1
+      36: swap
+      37: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      40: athrow
+    Exception table:
+       from    to  target type
+           0    31    31   Class java/lang/RuntimeException
+           0    31    31   Class java/lang/Error
+           0    31    32   Class java/lang/Throwable
+
+  public final boolean isProxyTargetClass();
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: invokeinterface #251,  1          // InterfaceMethod org/springframework/aop/framework/Advised.isProxyTargetClass:()Z
+      30: ireturn
+      31: athrow
+      32: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      35: dup_x1
+      36: swap
+      37: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      40: athrow
+    Exception table:
+       from    to  target type
+           0    31    31   Class java/lang/RuntimeException
+           0    31    31   Class java/lang/Error
+           0    31    32   Class java/lang/Throwable
+
+  public final void setTargetSource(org.springframework.aop.TargetSource);
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: aload_1
+      26: invokeinterface #255,  2          // InterfaceMethod org/springframework/aop/framework/Advised.setTargetSource:(Lorg/springframework/aop/TargetSource;)V
+      31: return
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    33   Class java/lang/Throwable
+
+  public final org.springframework.aop.TargetSource getTargetSource();
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: invokeinterface #261,  1          // InterfaceMethod org/springframework/aop/framework/Advised.getTargetSource:()Lorg/springframework/aop/TargetSource;
+      30: areturn
+      31: athrow
+      32: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      35: dup_x1
+      36: swap
+      37: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      40: athrow
+    Exception table:
+       from    to  target type
+           0    31    31   Class java/lang/RuntimeException
+           0    31    31   Class java/lang/Error
+           0    31    32   Class java/lang/Throwable
+
+  public final void setPreFiltered(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: iload_1
+      26: invokeinterface #264,  2          // InterfaceMethod org/springframework/aop/framework/Advised.setPreFiltered:(Z)V
+      31: return
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    33   Class java/lang/Throwable
+
+  public final void addAdvice(int, org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException;
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: iload_1
+      26: aload_2
+      27: invokeinterface #268,  3          // InterfaceMethod org/springframework/aop/framework/Advised.addAdvice:(ILorg/aopalliance/aop/Advice;)V
+      32: return
+      33: athrow
+      34: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      37: dup_x1
+      38: swap
+      39: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      42: athrow
+    Exception table:
+       from    to  target type
+           0    33    33   Class java/lang/RuntimeException
+           0    33    33   Class java/lang/Error
+           0    33    33   Class org/springframework/aop/framework/AopConfigException
+           0    33    34   Class java/lang/Throwable
+
+  public final void addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException;
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: aload_1
+      26: invokeinterface #273,  2          // InterfaceMethod org/springframework/aop/framework/Advised.addAdvice:(Lorg/aopalliance/aop/Advice;)V
+      31: return
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    32   Class org/springframework/aop/framework/AopConfigException
+           0    32    33   Class java/lang/Throwable
+
+  public final java.lang.Class[] getProxiedInterfaces();
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: invokeinterface #277,  1          // InterfaceMethod org/springframework/aop/framework/Advised.getProxiedInterfaces:()[Ljava/lang/Class;
+      30: areturn
+      31: athrow
+      32: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      35: dup_x1
+      36: swap
+      37: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      40: athrow
+    Exception table:
+       from    to  target type
+           0    31    31   Class java/lang/RuntimeException
+           0    31    31   Class java/lang/Error
+           0    31    32   Class java/lang/Throwable
+
+  public final boolean isInterfaceProxied(java.lang.Class);
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: aload_1
+      26: invokeinterface #281,  2          // InterfaceMethod org/springframework/aop/framework/Advised.isInterfaceProxied:(Ljava/lang/Class;)Z
+      31: ireturn
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    33   Class java/lang/Throwable
+
+  public final org.springframework.aop.Advisor[] getAdvisors();
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: invokeinterface #285,  1          // InterfaceMethod org/springframework/aop/framework/Advised.getAdvisors:()[Lorg/springframework/aop/Advisor;
+      30: areturn
+      31: athrow
+      32: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      35: dup_x1
+      36: swap
+      37: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      40: athrow
+    Exception table:
+       from    to  target type
+           0    31    31   Class java/lang/RuntimeException
+           0    31    31   Class java/lang/Error
+           0    31    32   Class java/lang/Throwable
+
+  public final void removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException;
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: iload_1
+      26: invokeinterface #289,  2          // InterfaceMethod org/springframework/aop/framework/Advised.removeAdvisor:(I)V
+      31: return
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    32   Class org/springframework/aop/framework/AopConfigException
+           0    32    33   Class java/lang/Throwable
+
+  public final boolean removeAdvisor(org.springframework.aop.Advisor);
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: aload_1
+      26: invokeinterface #292,  2          // InterfaceMethod org/springframework/aop/framework/Advised.removeAdvisor:(Lorg/springframework/aop/Advisor;)Z
+      31: ireturn
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    33   Class java/lang/Throwable
+
+  public final boolean replaceAdvisor(org.springframework.aop.Advisor, org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException;
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: aload_1
+      26: aload_2
+      27: invokeinterface #296,  3          // InterfaceMethod org/springframework/aop/framework/Advised.replaceAdvisor:(Lorg/springframework/aop/Advisor;Lorg/springframework/aop/Advisor;)Z
+      32: ireturn
+      33: athrow
+      34: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      37: dup_x1
+      38: swap
+      39: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      42: athrow
+    Exception table:
+       from    to  target type
+           0    33    33   Class java/lang/RuntimeException
+           0    33    33   Class java/lang/Error
+           0    33    33   Class org/springframework/aop/framework/AopConfigException
+           0    33    34   Class java/lang/Throwable
+
+  public final boolean removeAdvice(org.aopalliance.aop.Advice);
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: aload_1
+      26: invokeinterface #300,  2          // InterfaceMethod org/springframework/aop/framework/Advised.removeAdvice:(Lorg/aopalliance/aop/Advice;)Z
+      31: ireturn
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    33   Class java/lang/Throwable
+
+  public final java.lang.String toProxyConfigString();
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: invokeinterface #303,  1          // InterfaceMethod org/springframework/aop/framework/Advised.toProxyConfigString:()Ljava/lang/String;
+      30: areturn
+      31: athrow
+      32: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      35: dup_x1
+      36: swap
+      37: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      40: athrow
+    Exception table:
+       from    to  target type
+           0    31    31   Class java/lang/RuntimeException
+           0    31    31   Class java/lang/Error
+           0    31    32   Class java/lang/Throwable
+
+  public final boolean isPreFiltered();
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: invokeinterface #306,  1          // InterfaceMethod org/springframework/aop/framework/Advised.isPreFiltered:()Z
+      30: ireturn
+      31: athrow
+      32: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      35: dup_x1
+      36: swap
+      37: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      40: athrow
+    Exception table:
+       from    to  target type
+           0    31    31   Class java/lang/RuntimeException
+           0    31    31   Class java/lang/Error
+           0    31    32   Class java/lang/Throwable
+
+  public final int indexOf(org.aopalliance.aop.Advice);
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: aload_1
+      26: invokeinterface #310,  2          // InterfaceMethod org/springframework/aop/framework/Advised.indexOf:(Lorg/aopalliance/aop/Advice;)I
+      31: ireturn
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    33   Class java/lang/Throwable
+
+  public final int indexOf(org.springframework.aop.Advisor);
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: aload_1
+      26: invokeinterface #313,  2          // InterfaceMethod org/springframework/aop/framework/Advised.indexOf:(Lorg/springframework/aop/Advisor;)I
+      31: ireturn
+      32: athrow
+      33: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      36: dup_x1
+      37: swap
+      38: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      41: athrow
+    Exception table:
+       from    to  target type
+           0    32    32   Class java/lang/RuntimeException
+           0    32    32   Class java/lang/Error
+           0    32    33   Class java/lang/Throwable
+
+  public final boolean isFrozen();
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #8                  // class org/springframework/aop/framework/Advised
+      25: invokeinterface #316,  1          // InterfaceMethod org/springframework/aop/framework/Advised.isFrozen:()Z
+      30: ireturn
+      31: athrow
+      32: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      35: dup_x1
+      36: swap
+      37: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      40: athrow
+    Exception table:
+       from    to  target type
+           0    31    31   Class java/lang/RuntimeException
+           0    31    31   Class java/lang/Error
+           0    31    32   Class java/lang/Throwable
+
+  public final java.lang.Class getTargetClass();
+    Code:
+       0: aload_0
+       1: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+       4: dup
+       5: ifnonnull     17
+       8: pop
+       9: aload_0
+      10: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+      13: aload_0
+      14: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      17: invokeinterface #234,  1          // InterfaceMethod org/springframework/cglib/proxy/Dispatcher.loadObject:()Ljava/lang/Object;
+      22: checkcast     #320                // class org/springframework/aop/TargetClassAware
+      25: invokeinterface #322,  1          // InterfaceMethod org/springframework/aop/TargetClassAware.getTargetClass:()Ljava/lang/Class;
+      30: areturn
+      31: athrow
+      32: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      35: dup_x1
+      36: swap
+      37: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      40: athrow
+    Exception table:
+       from    to  target type
+           0    31    31   Class java/lang/RuntimeException
+           0    31    31   Class java/lang/Error
+           0    31    32   Class java/lang/Throwable
+
+  public com.broken.MyUserRepoImpl$$EnhancerBySpringCGLIB$$7321e929();
+    Code:
+       0: aload_0
+       1: dup
+       2: invokespecial #323                // Method com/broken/MyUserRepoImpl."<init>":()V
+       5: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+       8: return
+       9: athrow
+      10: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      13: dup_x1
+      14: swap
+      15: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      18: athrow
+    Exception table:
+       from    to  target type
+           0     9     9   Class java/lang/RuntimeException
+           0     9     9   Class java/lang/Error
+           0     9    10   Class java/lang/Throwable
+
+  public static void CGLIB$SET_THREAD_CALLBACKS(org.springframework.cglib.proxy.Callback[]);
+    Code:
+       0: getstatic     #39                 // Field CGLIB$THREAD_CALLBACKS:Ljava/lang/ThreadLocal;
+       3: aload_0
+       4: invokevirtual #328                // Method java/lang/ThreadLocal.set:(Ljava/lang/Object;)V
+       7: return
+
+  public static void CGLIB$SET_STATIC_CALLBACKS(org.springframework.cglib.proxy.Callback[]);
+    Code:
+       0: aload_0
+       1: putstatic     #331                // Field CGLIB$STATIC_CALLBACKS:[Lorg/springframework/cglib/proxy/Callback;
+       4: return
+
+  private static final void CGLIB$BIND_CALLBACKS(java.lang.Object);
+    Code:
+       0: aload_0
+       1: checkcast     #2                  // class com/broken/MyUserRepoImpl$$EnhancerBySpringCGLIB$$7321e929
+       4: astore_1
+       5: aload_1
+       6: getfield      #333                // Field CGLIB$BOUND:Z
+       9: ifne          107
+      12: aload_1
+      13: iconst_1
+      14: putfield      #333                // Field CGLIB$BOUND:Z
+      17: getstatic     #39                 // Field CGLIB$THREAD_CALLBACKS:Ljava/lang/ThreadLocal;
+      20: invokevirtual #336                // Method java/lang/ThreadLocal.get:()Ljava/lang/Object;
+      23: dup
+      24: ifnonnull     39
+      27: pop
+      28: getstatic     #331                // Field CGLIB$STATIC_CALLBACKS:[Lorg/springframework/cglib/proxy/Callback;
+      31: dup
+      32: ifnonnull     39
+      35: pop
+      36: goto          107
+      39: checkcast     #337                // class "[Lorg/springframework/cglib/proxy/Callback;"
+      42: aload_1
+      43: swap
+      44: dup2
+      45: bipush        6
+      47: aaload
+      48: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+      51: putfield      #137                // Field CGLIB$CALLBACK_6:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      54: dup2
+      55: iconst_5
+      56: aaload
+      57: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+      60: putfield      #105                // Field CGLIB$CALLBACK_5:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      63: dup2
+      64: iconst_4
+      65: aaload
+      66: checkcast     #231                // class org/springframework/cglib/proxy/Dispatcher
+      69: putfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      72: dup2
+      73: iconst_3
+      74: aaload
+      75: checkcast     #231                // class org/springframework/cglib/proxy/Dispatcher
+      78: putfield      #339                // Field CGLIB$CALLBACK_3:Lorg/springframework/cglib/proxy/Dispatcher;
+      81: dup2
+      82: iconst_2
+      83: aaload
+      84: checkcast     #341                // class org/springframework/cglib/proxy/NoOp
+      87: putfield      #343                // Field CGLIB$CALLBACK_2:Lorg/springframework/cglib/proxy/NoOp;
+      90: dup2
+      91: iconst_1
+      92: aaload
+      93: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+      96: putfield      #345                // Field CGLIB$CALLBACK_1:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      99: iconst_0
+     100: aaload
+     101: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+     104: putfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+     107: return
+
+  public java.lang.Object newInstance(org.springframework.cglib.proxy.Callback[]);
+    Code:
+       0: aload_1
+       1: invokestatic  #349                // Method CGLIB$SET_THREAD_CALLBACKS:([Lorg/springframework/cglib/proxy/Callback;)V
+       4: new           #2                  // class com/broken/MyUserRepoImpl$$EnhancerBySpringCGLIB$$7321e929
+       7: dup
+       8: invokespecial #350                // Method "<init>":()V
+      11: aconst_null
+      12: invokestatic  #349                // Method CGLIB$SET_THREAD_CALLBACKS:([Lorg/springframework/cglib/proxy/Callback;)V
+      15: areturn
+      16: athrow
+      17: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      20: dup_x1
+      21: swap
+      22: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      25: athrow
+    Exception table:
+       from    to  target type
+           0    16    16   Class java/lang/RuntimeException
+           0    16    16   Class java/lang/Error
+           0    16    17   Class java/lang/Throwable
+
+  public java.lang.Object newInstance(org.springframework.cglib.proxy.Callback);
+    Code:
+       0: new           #353                // class java/lang/IllegalStateException
+       3: dup
+       4: ldc_w         #355                // String More than one callback object required
+       7: invokespecial #356                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      10: athrow
+      11: nop
+      12: nop
+      13: nop
+      14: nop
+      15: nop
+      16: nop
+      17: nop
+      18: nop
+      19: nop
+      20: nop
+      21: nop
+      22: athrow
+      23: athrow
+      24: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      27: dup_x1
+      28: swap
+      29: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      32: athrow
+    Exception table:
+       from    to  target type
+           0    11    23   Class java/lang/RuntimeException
+           0    11    23   Class java/lang/Error
+           0    11    24   Class java/lang/Throwable
+
+  public java.lang.Object newInstance(java.lang.Class[], java.lang.Object[], org.springframework.cglib.proxy.Callback[]);
+    Code:
+       0: aload_3
+       1: invokestatic  #349                // Method CGLIB$SET_THREAD_CALLBACKS:([Lorg/springframework/cglib/proxy/Callback;)V
+       4: new           #2                  // class com/broken/MyUserRepoImpl$$EnhancerBySpringCGLIB$$7321e929
+       7: dup
+       8: aload_1
+       9: dup
+      10: arraylength
+      11: tableswitch   { // 0 to 0
+                     0: 28
+               default: 35
+          }
+      28: pop
+      29: invokespecial #350                // Method "<init>":()V
+      32: goto          50
+      35: goto          38
+      38: pop
+      39: new           #361                // class java/lang/IllegalArgumentException
+      42: dup
+      43: ldc_w         #363                // String Constructor not found
+      46: invokespecial #364                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      49: athrow
+      50: aconst_null
+      51: invokestatic  #349                // Method CGLIB$SET_THREAD_CALLBACKS:([Lorg/springframework/cglib/proxy/Callback;)V
+      54: areturn
+      55: athrow
+      56: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      59: dup_x1
+      60: swap
+      61: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      64: athrow
+    Exception table:
+       from    to  target type
+           0    55    55   Class java/lang/RuntimeException
+           0    55    55   Class java/lang/Error
+           0    55    56   Class java/lang/Throwable
+
+  public org.springframework.cglib.proxy.Callback getCallback(int);
+    Code:
+       0: aload_0
+       1: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+       4: aload_0
+       5: iload_1
+       6: tableswitch   { // 0 to 6
+                     0: 48
+                     1: 54
+                     2: 60
+                     3: 66
+                     4: 72
+                     5: 78
+                     6: 84
+               default: 90
+          }
+      48: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      51: goto          92
+      54: getfield      #345                // Field CGLIB$CALLBACK_1:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      57: goto          92
+      60: getfield      #343                // Field CGLIB$CALLBACK_2:Lorg/springframework/cglib/proxy/NoOp;
+      63: goto          92
+      66: getfield      #339                // Field CGLIB$CALLBACK_3:Lorg/springframework/cglib/proxy/Dispatcher;
+      69: goto          92
+      72: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      75: goto          92
+      78: getfield      #105                // Field CGLIB$CALLBACK_5:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      81: goto          92
+      84: getfield      #137                // Field CGLIB$CALLBACK_6:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      87: goto          92
+      90: pop
+      91: aconst_null
+      92: areturn
+      93: athrow
+      94: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      97: dup_x1
+      98: swap
+      99: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+     102: athrow
+    Exception table:
+       from    to  target type
+           0    93    93   Class java/lang/RuntimeException
+           0    93    93   Class java/lang/Error
+           0    93    94   Class java/lang/Throwable
+
+  public void setCallback(int, org.springframework.cglib.proxy.Callback);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 6
+                     0: 44
+                     1: 55
+                     2: 66
+                     3: 77
+                     4: 88
+                     5: 99
+                     6: 110
+               default: 121
+          }
+      44: aload_0
+      45: aload_2
+      46: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+      49: putfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      52: goto          121
+      55: aload_0
+      56: aload_2
+      57: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+      60: putfield      #345                // Field CGLIB$CALLBACK_1:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      63: goto          121
+      66: aload_0
+      67: aload_2
+      68: checkcast     #341                // class org/springframework/cglib/proxy/NoOp
+      71: putfield      #343                // Field CGLIB$CALLBACK_2:Lorg/springframework/cglib/proxy/NoOp;
+      74: goto          121
+      77: aload_0
+      78: aload_2
+      79: checkcast     #231                // class org/springframework/cglib/proxy/Dispatcher
+      82: putfield      #339                // Field CGLIB$CALLBACK_3:Lorg/springframework/cglib/proxy/Dispatcher;
+      85: goto          121
+      88: aload_0
+      89: aload_2
+      90: checkcast     #231                // class org/springframework/cglib/proxy/Dispatcher
+      93: putfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      96: goto          121
+      99: aload_0
+     100: aload_2
+     101: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+     104: putfield      #105                // Field CGLIB$CALLBACK_5:Lorg/springframework/cglib/proxy/MethodInterceptor;
+     107: goto          121
+     110: aload_0
+     111: aload_2
+     112: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+     115: putfield      #137                // Field CGLIB$CALLBACK_6:Lorg/springframework/cglib/proxy/MethodInterceptor;
+     118: goto          121
+     121: return
+     122: athrow
+     123: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+     126: dup_x1
+     127: swap
+     128: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+     131: athrow
+    Exception table:
+       from    to  target type
+           0   122   122   Class java/lang/RuntimeException
+           0   122   122   Class java/lang/Error
+           0   122   123   Class java/lang/Throwable
+
+  public org.springframework.cglib.proxy.Callback[] getCallbacks();
+    Code:
+       0: aload_0
+       1: invokestatic  #56                 // Method CGLIB$BIND_CALLBACKS:(Ljava/lang/Object;)V
+       4: aload_0
+       5: bipush        7
+       7: anewarray     #358                // class org/springframework/cglib/proxy/Callback
+      10: dup
+      11: iconst_0
+      12: aload_0
+      13: getfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      16: aastore
+      17: dup
+      18: iconst_1
+      19: aload_0
+      20: getfield      #345                // Field CGLIB$CALLBACK_1:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      23: aastore
+      24: dup
+      25: iconst_2
+      26: aload_0
+      27: getfield      #343                // Field CGLIB$CALLBACK_2:Lorg/springframework/cglib/proxy/NoOp;
+      30: aastore
+      31: dup
+      32: iconst_3
+      33: aload_0
+      34: getfield      #339                // Field CGLIB$CALLBACK_3:Lorg/springframework/cglib/proxy/Dispatcher;
+      37: aastore
+      38: dup
+      39: iconst_4
+      40: aload_0
+      41: getfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      44: aastore
+      45: dup
+      46: iconst_5
+      47: aload_0
+      48: getfield      #105                // Field CGLIB$CALLBACK_5:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      51: aastore
+      52: dup
+      53: bipush        6
+      55: aload_0
+      56: getfield      #137                // Field CGLIB$CALLBACK_6:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      59: aastore
+      60: areturn
+      61: athrow
+      62: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      65: dup_x1
+      66: swap
+      67: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      70: athrow
+    Exception table:
+       from    to  target type
+           0    61    61   Class java/lang/RuntimeException
+           0    61    61   Class java/lang/Error
+           0    61    62   Class java/lang/Throwable
+
+  public void setCallbacks(org.springframework.cglib.proxy.Callback[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: dup2
+       3: iconst_0
+       4: aaload
+       5: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+       8: putfield      #52                 // Field CGLIB$CALLBACK_0:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      11: dup2
+      12: iconst_1
+      13: aaload
+      14: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+      17: putfield      #345                // Field CGLIB$CALLBACK_1:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      20: dup2
+      21: iconst_2
+      22: aaload
+      23: checkcast     #341                // class org/springframework/cglib/proxy/NoOp
+      26: putfield      #343                // Field CGLIB$CALLBACK_2:Lorg/springframework/cglib/proxy/NoOp;
+      29: dup2
+      30: iconst_3
+      31: aaload
+      32: checkcast     #231                // class org/springframework/cglib/proxy/Dispatcher
+      35: putfield      #339                // Field CGLIB$CALLBACK_3:Lorg/springframework/cglib/proxy/Dispatcher;
+      38: dup2
+      39: iconst_4
+      40: aaload
+      41: checkcast     #231                // class org/springframework/cglib/proxy/Dispatcher
+      44: putfield      #229                // Field CGLIB$CALLBACK_4:Lorg/springframework/cglib/proxy/Dispatcher;
+      47: dup2
+      48: iconst_5
+      49: aaload
+      50: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+      53: putfield      #105                // Field CGLIB$CALLBACK_5:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      56: dup2
+      57: bipush        6
+      59: aaload
+      60: checkcast     #64                 // class org/springframework/cglib/proxy/MethodInterceptor
+      63: putfield      #137                // Field CGLIB$CALLBACK_6:Lorg/springframework/cglib/proxy/MethodInterceptor;
+      66: return
+      67: athrow
+      68: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+      71: dup_x1
+      72: swap
+      73: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      76: athrow
+    Exception table:
+       from    to  target type
+           0    67    67   Class java/lang/RuntimeException
+           0    67    67   Class java/lang/Error
+           0    67    68   Class java/lang/Throwable
+
+  static {};
+    Code:
+       0: invokestatic  #378                // Method CGLIB$STATICHOOK78:()V
+       3: invokestatic  #380                // Method CGLIB$STATICHOOK77:()V
+       6: return
+
+  static void CGLIB$STATICHOOK78();
+    Code:
+       0: return
+       1: athrow
+       2: new           #78                 // class java/lang/reflect/UndeclaredThrowableException
+       5: dup_x1
+       6: swap
+       7: invokespecial #81                 // Method java/lang/reflect/UndeclaredThrowableException."<init>":(Ljava/lang/Throwable;)V
+      10: athrow
+    Exception table:
+       from    to  target type
+           0     1     1   Class java/lang/RuntimeException
+           0     1     1   Class java/lang/Error
+           0     1     2   Class java/lang/Throwable
+}
